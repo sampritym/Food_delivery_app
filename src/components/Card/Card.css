@@ -1,0 +1,79 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+  width: 325px;
+  height: 370px; 
+  margin: 20px;
+  overflow-y: auto; 
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image {
+  width: 100%;
+  height: 150px; 
+  object-fit: cover; 
+}
+
+.card-content {
+  padding: 16px;
+  height: calc(100% - 150px); 
+  overflow-y: auto; 
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin: 0 0 10px;
+}
+
+.card-text {
+  font-size: 1em;
+  color: #555;
+}
+.price{
+  display: inline;
+  margin-left: 5px;
+}
+.total {
+  display: inline;
+  margin-left: 40%;
+}
+
+.select-btn {
+  display: inline;
+  width: 50px;
+  height: 20px;
+}
+
+.select-value {
+  text-align: center;
+}
+
+.add {
+  position: relative;
+  left:25%;
+  top: 10px;
+  display: inline-block;           
+  padding: 10px 20px;             
+  background-color: #007bff;       
+  color: white;                   
+  font-size: 16px;                
+  font-weight: bold;              
+  text-align: center;             
+  border: none;                   
+  border-radius: 5px;              
+  cursor: pointer;               
+  text-decoration: none;           
+  transition: background-color 0.3s ease; 
+}
+
+.add:hover {
+  background-color: #0056b3;       
+}
+
+  

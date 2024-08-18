@@ -1,0 +1,35 @@
+.card-align {
+  padding: 20px;
+}
+
+.category-container {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+  width: 325px;
+  margin: 20px;
+}
+  
+  
+.nav{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+}
+

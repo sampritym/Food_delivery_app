@@ -1,0 +1,11 @@
+.footer-container{
+    height: 7vh;
+    background-color: rgb(212, 45, 45);
+}
+.footer-content{
+    color: white;
+    position: relative;
+    top: 10px;
+    text-align: center;
+
+}
