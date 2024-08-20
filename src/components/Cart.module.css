@@ -1,0 +1,52 @@
+/* Cart.module.css */
+
+.container {
+    margin: 20px;
+    padding: 10px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .th, .td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .th {
+    background-color: #f4f4f4;
+  }
+  
+  .total {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .emptyCart {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .emptyCartText {
+    font-size: 24px;
+    color: #666;
+  }
+  
+  .removeButton {
+    background: #dc3545;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  

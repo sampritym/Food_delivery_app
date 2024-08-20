@@ -4,11 +4,14 @@ import { Link, useNavigate } from 'react-router-dom'
 
 export default function Navbar() {
   const navigate=useNavigate();
+ 
 
     const handleLogOut=()=>{
 localStorage.removeItem("authToken");
 navigate("/Login")
     }
+    
+  
 
 
   return (
@@ -32,7 +35,7 @@ navigate("/Login")
       </div>
       :
       <div className='navbar-btn'>
-      <div className="btn"><Link to="">My cart</Link></div>
+      <div className="btn"><Link to="/myCart">My cart</Link></div>
       <div className="btn">|</div>
       <div className="btn"><Link to="">My orders</Link></div>
       <div className="btn">|</div>
