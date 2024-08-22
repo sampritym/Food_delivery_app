@@ -43,6 +43,7 @@ const Login = () => {
         
       setSuccess(true);
       setError(null);
+       localStorage.setItem("userEmail",formData.email);
        localStorage.setItem("authToken",response.data.authToken);
       
         navigate("/")

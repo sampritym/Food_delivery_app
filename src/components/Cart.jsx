@@ -1,7 +1,8 @@
 import React from 'react';
 import { useCart, useDispatchCart } from './ContextReducer';
-import styles from './Cart.module.css'; // Import the CSS module
+import styles from './Cart.module.css'; 
 import Navbar from './Navbar/Navbar';
+import axios from 'axios';
 
 export default function Cart() {
   const data = useCart();
@@ -10,6 +11,33 @@ export default function Cart() {
   const handleRemove = (index) => {
     dispatch({ type: 'REMOVE', index });
   };
+
+
+
+const handleCheckOut = async () => {
+  let userEmail = localStorage.getItem("userEmail");
+
+  try {
+    const response = await axios.post("http://localhost:3000/api/orderDetail", {
+      order_data: data,
+      email: userEmail,
+      order_date: new Date().toDateString()
+    } , {
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+    console.log("order",response)
+    console.log("JSON RESPONSE:::::", response.status);
+    if (response.status === 200) {
+      dispatch({ type: "DROP" });
+    }
+  } catch (error) {
+    console.error("Error during checkout:", error);
+   
+  }
+}
+
 
   const totalPrice = data.reduce((total, item) => total + item.price * item.qty, 0);
 
@@ -56,6 +84,7 @@ export default function Cart() {
       </table>
       <div className={styles.total}>
         <h2>Total Price: Rs.{totalPrice}</h2>
+        <h3 onClick={handleCheckOut}>Checkout</h3>
       </div>
     </div>
     </>

@@ -11,6 +11,7 @@ import {
 } from 'react-router-dom'
 import { CartProvider } from './components/ContextReducer'
 import Cart from './components/Cart'
+import MyOrder from './pages/MyOrder/MyOrder'
 
 
 
@@ -25,6 +26,7 @@ function App() {
        <Route exact path='/Register' element={<Register/>}/>
        <Route exact path='/Login' element={<Login/>}/>
        <Route exact path='/myCart' element={<Cart/>}/>
+       <Route exact path='/myOrder' element={<MyOrder/>}/>
     
     </Routes>
     </Router>

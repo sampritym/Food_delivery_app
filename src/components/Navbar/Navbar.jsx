@@ -37,7 +37,7 @@ navigate("/Login")
       <div className='navbar-btn'>
       <div className="btn"><Link to="/myCart">My cart</Link></div>
       <div className="btn">|</div>
-      <div className="btn"><Link to="">My orders</Link></div>
+      <div className="btn"><Link to="/myOrder">My orders</Link></div>
       <div className="btn">|</div>
       <div className="btn" onClick={handleLogOut}><Link to="">Logout</Link></div>
       </div>
