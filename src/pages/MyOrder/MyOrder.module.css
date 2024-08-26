@@ -1,0 +1,43 @@
+.orderList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.orderItem {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+  
+    
+}
+
+.orderItem h5 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.orderDate {
+    font-size: 1.1rem;
+    font-weight: bold;
+  
+ 
+    color:rgb(212, 45, 45);
+    
+  
+}
+.orderDetails {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.orderDetails span {
+    font-size: 0.9rem;
+}
+
+.price {
+    margin-top: 5px;
+    font-weight: bold;
+    color: #333;
+}

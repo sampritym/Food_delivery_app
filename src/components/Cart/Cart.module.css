@@ -1,0 +1,65 @@
+.cartContainer {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 0 20px;
+  }
+  
+  .cartTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .cartTable th,
+  .cartTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .cartTable th {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: left;
+  }
+  
+  .cartTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .deleteButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .totalPrice {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .checkOutButton button {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .emptyCart {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .message {
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+  }
+  
